@@ -1,0 +1,19 @@
+
+=== Task 1
+ skip  [1] resolver vs dig  - dig not installed
+
+=== Task 2
+ skip  [2] capture parses  - tshark not installed - open it in Wireshark
+  ok   [2] out/chains.json parses  - 12 sites
+  ok   [2] report mentions a table
+  ok   [2] report mentions third-party verdict
+  ok   [2] report mentions the steering number
+
+=== Task 3
+  baseline   upstream   325   hit rate  67.5%   stale  266   sim time    6.5s
+  yours      upstream   275   hit rate  72.5%   stale    0   sim time    5.5s
+  ok   [3] R3 zero stale answers  - 0 stale
+  ok   [3] R4 no more upstream than baseline  - 275 vs 325
+ skip  [3] R5 floor argument in observation.md  - graded by a human
+
+  6 passed, 0 failed, 3 skipped

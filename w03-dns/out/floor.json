@@ -1,0 +1,65 @@
+{
+  "minimum_upstream": 275,
+  "per_name": {
+    "www.microsoft.com": {
+      "ttl": 20,
+      "floor": 118,
+      "baseline_calls": 52,
+      "baseline_stale": 189
+    },
+    "www.cnn.com": {
+      "ttl": 30,
+      "floor": 76,
+      "baseline_calls": 47,
+      "baseline_stale": 77
+    },
+    "www.netflix.com": {
+      "ttl": 60,
+      "floor": 37,
+      "baseline_calls": 37,
+      "baseline_stale": 0
+    },
+    "www.spotify.com": {
+      "ttl": 120,
+      "floor": 23,
+      "baseline_calls": 38,
+      "baseline_stale": 0
+    },
+    "www.github.com": {
+      "ttl": 300,
+      "floor": 11,
+      "baseline_calls": 27,
+      "baseline_stale": 0
+    },
+    "www.wikipedia.org": {
+      "ttl": 600,
+      "floor": 6,
+      "baseline_calls": 31,
+      "baseline_stale": 0
+    },
+    "www.korea.ac.kr": {
+      "ttl": 3600,
+      "floor": 1,
+      "baseline_calls": 25,
+      "baseline_stale": 0
+    },
+    "www.stanford.edu": {
+      "ttl": 3600,
+      "floor": 1,
+      "baseline_calls": 27,
+      "baseline_stale": 0
+    },
+    "dns.google": {
+      "ttl": 86400,
+      "floor": 1,
+      "baseline_calls": 21,
+      "baseline_stale": 0
+    },
+    "a.root-servers.net": {
+      "ttl": 86400,
+      "floor": 1,
+      "baseline_calls": 20,
+      "baseline_stale": 0
+    }
+  }
+}

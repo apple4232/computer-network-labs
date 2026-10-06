@@ -1,0 +1,55 @@
+[
+  {
+    "name": "dns.google.",
+    "server": "198.41.0.4",
+    "rcode": "NOERROR",
+    "authoritative": false,
+    "answer": [],
+    "authority": [
+      "google. 172800 IN NS ns-tld2.charlestonroadregistry.com.\ngoogle. 172800 IN NS ns-tld4.charlestonroadregistry.com.\ngoogle. 172800 IN NS ns-tld1.charlestonroadregistry.com.\ngoogle. 172800 IN NS ns-tld3.charlestonroadregistry.com.\ngoogle. 172800 IN NS ns-tld5.charlestonroadregistry.com."
+    ],
+    "additional": [
+      "ns-tld2.charlestonroadregistry.com. 172800 IN A 216.239.34.105",
+      "ns-tld2.charlestonroadregistry.com. 172800 IN AAAA 2001:4860:4802:34::69",
+      "ns-tld4.charlestonroadregistry.com. 172800 IN A 216.239.38.105",
+      "ns-tld4.charlestonroadregistry.com. 172800 IN AAAA 2001:4860:4802:38::69",
+      "ns-tld1.charlestonroadregistry.com. 172800 IN A 216.239.32.105",
+      "ns-tld1.charlestonroadregistry.com. 172800 IN AAAA 2001:4860:4802:32::69",
+      "ns-tld3.charlestonroadregistry.com. 172800 IN A 216.239.36.105",
+      "ns-tld3.charlestonroadregistry.com. 172800 IN AAAA 2001:4860:4802:36::69",
+      "ns-tld5.charlestonroadregistry.com. 172800 IN A 216.239.60.105",
+      "ns-tld5.charlestonroadregistry.com. 172800 IN AAAA 2001:4860:4805::69"
+    ]
+  },
+  {
+    "name": "dns.google.",
+    "server": "216.239.34.105",
+    "rcode": "NOERROR",
+    "authoritative": false,
+    "answer": [],
+    "authority": [
+      "dns.google. 10800 IN NS ns1.zdns.google.\ndns.google. 10800 IN NS ns2.zdns.google.\ndns.google. 10800 IN NS ns4.zdns.google.\ndns.google. 10800 IN NS ns3.zdns.google."
+    ],
+    "additional": [
+      "ns4.zdns.google. 3600 IN A 216.239.38.114",
+      "ns4.zdns.google. 3600 IN AAAA 2001:4860:4802:38::72",
+      "ns2.zdns.google. 3600 IN A 216.239.34.114",
+      "ns2.zdns.google. 3600 IN AAAA 2001:4860:4802:34::72",
+      "ns3.zdns.google. 3600 IN A 216.239.36.114",
+      "ns3.zdns.google. 3600 IN AAAA 2001:4860:4802:36::72",
+      "ns1.zdns.google. 3600 IN A 216.239.32.114",
+      "ns1.zdns.google. 3600 IN AAAA 2001:4860:4802:32::72"
+    ]
+  },
+  {
+    "name": "dns.google.",
+    "server": "216.239.38.114",
+    "rcode": "NOERROR",
+    "authoritative": true,
+    "answer": [
+      "dns.google. 900 IN A 8.8.8.8\ndns.google. 900 IN A 8.8.4.4"
+    ],
+    "authority": [],
+    "additional": []
+  }
+]

@@ -1,0 +1,19 @@
+test_expiration_boundary_and_case_equivalence (__main__.CacheTests.test_expiration_boundary_and_case_equivalence) ... ok
+test_workload_matches_independent_floor (__main__.CacheTests.test_workload_matches_independent_floor) ... ok
+test_zero_ttl_never_reuses_answer (__main__.CacheTests.test_zero_ttl_never_reuses_answer) ... ok
+test_collector_follows_in_message_cname_and_keeps_address_set (__main__.MeasurementTests.test_collector_follows_in_message_cname_and_keeps_address_set) ... ok
+test_real_capture_pairs_and_referral_sections (__main__.MeasurementTests.test_real_capture_pairs_and_referral_sections) ... ok
+test_timeout_is_unknown_not_an_empty_address_set (__main__.MeasurementTests.test_timeout_is_unknown_not_an_empty_address_set) ... ok
+test_cname_cycle_and_query_budget_stop (__main__.ResolverTests.test_cname_cycle_and_query_budget_stop) ... ok
+test_cname_restarts_at_root (__main__.ResolverTests.test_cname_restarts_at_root) ... ok
+test_no_glue_resolves_ns_from_root_and_records_extra_queries (__main__.ResolverTests.test_no_glue_resolves_ns_from_root_and_records_extra_queries) ... ok
+test_partial_glue_failure_falls_back_to_ns_without_glue (__main__.ResolverTests.test_partial_glue_failure_falls_back_to_ns_without_glue) ... ok
+test_root_can_supply_cross_tld_glue (__main__.ResolverTests.test_root_can_supply_cross_tld_glue) ... ok
+test_timeout_tries_another_root (__main__.ResolverTests.test_timeout_tries_another_root) ... ok
+test_transport_clears_rd_and_retries_truncated_response_over_tcp (__main__.ResolverTests.test_transport_clears_rd_and_retries_truncated_response_over_tcp) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.015s
+
+OK
+  regression upstream   275   hit rate  72.5%   stale    0   sim time    5.5s

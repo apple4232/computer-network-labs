@@ -1,5 +1,7 @@
 # Computer Networks · Labs
 
+**Week 3 제출 결과:** [SUBMISSION.md](SUBMISSION.md) · [관찰 기록](w03-dns/out/observation.md) · [측정 보고서](w03-dns/out/report.md).
+
 2026-2 · Korea University Sejong · **Weeks 2 – 7**
 
 This is the lab repository. Clone it and work inside it.

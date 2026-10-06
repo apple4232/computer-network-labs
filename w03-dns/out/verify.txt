@@ -1,0 +1,8 @@
+dig unavailable: independent reference = dnspython system recursive resolver
+  ok    www.korea.ac.kr        you=163.152.6.10     reference=163.152.6.10   hops=3
+  ok    dns.google             you=8.8.4.4          reference=8.8.4.4,8.8.8.8   hops=3
+  ok    en.wikipedia.org       you=103.102.166.224  reference=103.102.166.224   hops=6
+  ok    www.stanford.edu       you=3.33.186.135     reference=15.197.167.90,3.33.186.135   hops=6
+  ok    www.microsoft.com      you=184.28.184.92    reference=184.28.184.92   hops=10
+
+  5/5 ok

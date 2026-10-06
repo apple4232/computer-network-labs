@@ -1,0 +1,97 @@
+[
+  {
+    "server": "168.126.63.1",
+    "ms": 19.67,
+    "rcode": 0
+  },
+  {
+    "server": "168.126.63.1",
+    "ms": 10.48,
+    "rcode": 0
+  },
+  {
+    "server": "168.126.63.1",
+    "ms": 10.15,
+    "rcode": 0
+  },
+  {
+    "server": "168.126.63.1",
+    "ms": 9.83,
+    "rcode": 0
+  },
+  {
+    "server": "168.126.63.1",
+    "ms": 7.39,
+    "rcode": 0
+  },
+  {
+    "server": "8.8.8.8",
+    "ms": 36.42,
+    "rcode": 0
+  },
+  {
+    "server": "8.8.8.8",
+    "ms": 37.13,
+    "rcode": 0
+  },
+  {
+    "server": "8.8.8.8",
+    "ms": 38.83,
+    "rcode": 0
+  },
+  {
+    "server": "8.8.8.8",
+    "ms": 37.79,
+    "rcode": 0
+  },
+  {
+    "server": "8.8.8.8",
+    "ms": 37.1,
+    "rcode": 0
+  },
+  {
+    "server": "9.9.9.9",
+    "ms": 38.28,
+    "rcode": 0
+  },
+  {
+    "server": "9.9.9.9",
+    "ms": 39.95,
+    "rcode": 0
+  },
+  {
+    "server": "9.9.9.9",
+    "ms": 38.39,
+    "rcode": 0
+  },
+  {
+    "server": "9.9.9.9",
+    "ms": 37.14,
+    "rcode": 0
+  },
+  {
+    "server": "9.9.9.9",
+    "ms": 39.38,
+    "rcode": 0
+  },
+  {
+    "server": "84.200.69.80",
+    "error": "The DNS operation timed out."
+  },
+  {
+    "server": "84.200.69.80",
+    "error": "The DNS operation timed out."
+  },
+  {
+    "server": "84.200.69.80",
+    "error": "The DNS operation timed out."
+  },
+  {
+    "server": "84.200.69.80",
+    "error": "The DNS operation timed out."
+  },
+  {
+    "server": "84.200.69.80",
+    "error": "The DNS operation timed out."
+  }
+]

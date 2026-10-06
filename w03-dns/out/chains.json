@@ -1,0 +1,874 @@
+{
+  "www.microsoft.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.microsoft.com",
+              "to": "www.microsoft.com-c-3.edgekey.net"
+            },
+            {
+              "from": "www.microsoft.com-c-3.edgekey.net",
+              "to": "e13678.dscb.akamaiedge.net"
+            }
+          ],
+          "final_name": "e13678.dscb.akamaiedge.net",
+          "addresses": [
+            "184.28.184.92"
+          ],
+          "elapsed_ms": 55.86,
+          "responses": [
+            "id 8867\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.microsoft.com. IN A\n;ANSWER\nwww.microsoft.com. 1864 IN CNAME www.microsoft.com-c-3.edgekey.net.\nwww.microsoft.com-c-3.edgekey.net. 723 IN CNAME e13678.dscb.akamaiedge.net.\ne13678.dscb.akamaiedge.net. 17 IN A 184.28.184.92\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.microsoft.com",
+              "to": "www.microsoft.com-c-3.edgekey.net"
+            },
+            {
+              "from": "www.microsoft.com-c-3.edgekey.net",
+              "to": "e13678.dscb.akamaiedge.net"
+            }
+          ],
+          "final_name": "e13678.dscb.akamaiedge.net",
+          "addresses": [
+            "184.28.184.92"
+          ],
+          "elapsed_ms": 76.37,
+          "responses": [
+            "id 29613\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.microsoft.com. IN A\n;ANSWER\nwww.microsoft.com. 1057 IN CNAME www.microsoft.com-c-3.edgekey.net.\nwww.microsoft.com-c-3.edgekey.net. 376 IN CNAME e13678.dscb.akamaiedge.net.\ne13678.dscb.akamaiedge.net. 20 IN A 184.28.184.92\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.microsoft.com",
+              "to": "www.microsoft.com-c-3.edgekey.net"
+            },
+            {
+              "from": "www.microsoft.com-c-3.edgekey.net",
+              "to": "e13678.dscb.akamaiedge.net"
+            }
+          ],
+          "final_name": "e13678.dscb.akamaiedge.net",
+          "addresses": [
+            "23.0.194.92"
+          ],
+          "elapsed_ms": 69.36,
+          "responses": [
+            "id 33741\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.microsoft.com. IN A\n;ANSWER\nwww.microsoft.com. 1248 IN CNAME www.microsoft.com-c-3.edgekey.net.\nwww.microsoft.com-c-3.edgekey.net. 788 IN CNAME e13678.dscb.akamaiedge.net.\ne13678.dscb.akamaiedge.net. 4 IN A 23.0.194.92\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.netflix.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.netflix.com",
+              "to": "www.prod.ftl.netflix.com"
+            }
+          ],
+          "final_name": "www.prod.ftl.netflix.com",
+          "addresses": [
+            "207.45.72.1",
+            "207.45.73.1"
+          ],
+          "elapsed_ms": 11.52,
+          "responses": [
+            "id 51616\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.netflix.com. IN A\n;ANSWER\nwww.netflix.com. 23 IN CNAME www.prod.ftl.netflix.com.\nwww.prod.ftl.netflix.com. 23 IN A 207.45.73.1\nwww.prod.ftl.netflix.com. 23 IN A 207.45.72.1\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.netflix.com",
+              "to": "www.prod.ftl.netflix.com"
+            }
+          ],
+          "final_name": "www.prod.ftl.netflix.com",
+          "addresses": [
+            "207.45.72.1",
+            "207.45.73.1"
+          ],
+          "elapsed_ms": 37.17,
+          "responses": [
+            "id 54903\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.netflix.com. IN A\n;ANSWER\nwww.netflix.com. 23 IN CNAME www.prod.ftl.netflix.com.\nwww.prod.ftl.netflix.com. 23 IN A 207.45.73.1\nwww.prod.ftl.netflix.com. 23 IN A 207.45.72.1\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.netflix.com",
+              "to": "www.prod.ftl.netflix.com"
+            }
+          ],
+          "final_name": "www.prod.ftl.netflix.com",
+          "addresses": [
+            "207.45.72.1",
+            "207.45.73.1"
+          ],
+          "elapsed_ms": 39.5,
+          "responses": [
+            "id 39878\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.netflix.com. IN A\n;ANSWER\nwww.netflix.com. 42 IN CNAME www.prod.ftl.netflix.com.\nwww.prod.ftl.netflix.com. 3 IN A 207.45.73.1\nwww.prod.ftl.netflix.com. 3 IN A 207.45.72.1\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.adobe.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.adobe.com",
+              "to": "www.adobe.com.edgesuite.net"
+            },
+            {
+              "from": "www.adobe.com.edgesuite.net",
+              "to": "a1319.dscr.akamai.net"
+            }
+          ],
+          "final_name": "a1319.dscr.akamai.net",
+          "addresses": [
+            "23.32.4.154",
+            "23.32.4.176",
+            "23.32.4.177",
+            "23.32.4.178",
+            "23.32.4.184",
+            "23.32.4.185",
+            "23.32.4.201",
+            "23.32.4.210",
+            "23.32.4.233"
+          ],
+          "elapsed_ms": 10.01,
+          "responses": [
+            "id 54539\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.adobe.com. IN A\n;ANSWER\nwww.adobe.com. 24 IN CNAME www.adobe.com.edgesuite.net.\nwww.adobe.com.edgesuite.net. 3746 IN CNAME a1319.dscr.akamai.net.\na1319.dscr.akamai.net. 1 IN A 23.32.4.177\na1319.dscr.akamai.net. 1 IN A 23.32.4.176\na1319.dscr.akamai.net. 1 IN A 23.32.4.201\na1319.dscr.akamai.net. 1 IN A 23.32.4.185\na1319.dscr.akamai.net. 1 IN A 23.32.4.178\na1319.dscr.akamai.net. 1 IN A 23.32.4.184\na1319.dscr.akamai.net. 1 IN A 23.32.4.233\na1319.dscr.akamai.net. 1 IN A 23.32.4.210\na1319.dscr.akamai.net. 1 IN A 23.32.4.154\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.adobe.com",
+              "to": "www.adobe.com.edgesuite.net"
+            },
+            {
+              "from": "www.adobe.com.edgesuite.net",
+              "to": "a1319.dscr.akamai.net"
+            }
+          ],
+          "final_name": "a1319.dscr.akamai.net",
+          "addresses": [
+            "23.32.4.107",
+            "23.32.4.121",
+            "23.32.4.136",
+            "23.32.4.138",
+            "23.32.4.32",
+            "23.32.4.33",
+            "23.32.4.34",
+            "23.32.4.72",
+            "23.32.4.9"
+          ],
+          "elapsed_ms": 42.81,
+          "responses": [
+            "id 55665\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.adobe.com. IN A\n;ANSWER\nwww.adobe.com. 207 IN CNAME www.adobe.com.edgesuite.net.\nwww.adobe.com.edgesuite.net. 1940 IN CNAME a1319.dscr.akamai.net.\na1319.dscr.akamai.net. 20 IN A 23.32.4.32\na1319.dscr.akamai.net. 20 IN A 23.32.4.34\na1319.dscr.akamai.net. 20 IN A 23.32.4.107\na1319.dscr.akamai.net. 20 IN A 23.32.4.9\na1319.dscr.akamai.net. 20 IN A 23.32.4.121\na1319.dscr.akamai.net. 20 IN A 23.32.4.72\na1319.dscr.akamai.net. 20 IN A 23.32.4.33\na1319.dscr.akamai.net. 20 IN A 23.32.4.138\na1319.dscr.akamai.net. 20 IN A 23.32.4.136\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.adobe.com",
+              "to": "www.adobe.com.edgesuite.net"
+            },
+            {
+              "from": "www.adobe.com.edgesuite.net",
+              "to": "a1319.dscr.akamai.net"
+            }
+          ],
+          "final_name": "a1319.dscr.akamai.net",
+          "addresses": [
+            "23.219.78.45",
+            "23.219.78.49"
+          ],
+          "elapsed_ms": 39.24,
+          "responses": [
+            "id 6087\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.adobe.com. IN A\n;ANSWER\nwww.adobe.com. 280 IN CNAME www.adobe.com.edgesuite.net.\nwww.adobe.com.edgesuite.net. 2192 IN CNAME a1319.dscr.akamai.net.\na1319.dscr.akamai.net. 18 IN A 23.219.78.49\na1319.dscr.akamai.net. 18 IN A 23.219.78.45\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.cnn.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.cnn.com",
+              "to": "cnn-tls.map.fastly.net"
+            }
+          ],
+          "final_name": "cnn-tls.map.fastly.net",
+          "addresses": [
+            "146.75.51.5"
+          ],
+          "elapsed_ms": 15.47,
+          "responses": [
+            "id 45209\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.cnn.com. IN A\n;ANSWER\nwww.cnn.com. 221 IN CNAME cnn-tls.map.fastly.net.\ncnn-tls.map.fastly.net. 60 IN A 146.75.51.5\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.cnn.com",
+              "to": "cnn-tls.map.fastly.net"
+            }
+          ],
+          "final_name": "cnn-tls.map.fastly.net",
+          "addresses": [
+            "151.101.131.5",
+            "151.101.195.5",
+            "151.101.3.5",
+            "151.101.67.5"
+          ],
+          "elapsed_ms": 35.35,
+          "responses": [
+            "id 2204\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.cnn.com. IN A\n;ANSWER\nwww.cnn.com. 130 IN CNAME cnn-tls.map.fastly.net.\ncnn-tls.map.fastly.net. 13 IN A 151.101.131.5\ncnn-tls.map.fastly.net. 13 IN A 151.101.67.5\ncnn-tls.map.fastly.net. 13 IN A 151.101.3.5\ncnn-tls.map.fastly.net. 13 IN A 151.101.195.5\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.cnn.com",
+              "to": "cnn-tls.map.fastly.net"
+            }
+          ],
+          "final_name": "cnn-tls.map.fastly.net",
+          "addresses": [
+            "151.101.131.5",
+            "151.101.195.5",
+            "151.101.3.5",
+            "151.101.67.5"
+          ],
+          "elapsed_ms": 44.88,
+          "responses": [
+            "id 8109\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.cnn.com. IN A\n;ANSWER\nwww.cnn.com. 138 IN CNAME cnn-tls.map.fastly.net.\ncnn-tls.map.fastly.net. 60 IN A 151.101.3.5\ncnn-tls.map.fastly.net. 60 IN A 151.101.67.5\ncnn-tls.map.fastly.net. 60 IN A 151.101.131.5\ncnn-tls.map.fastly.net. 60 IN A 151.101.195.5\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.apple.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.apple.com",
+              "to": "www-apple-com.v.aaplimg.com"
+            },
+            {
+              "from": "www-apple-com.v.aaplimg.com",
+              "to": "www.apple.com.edgekey.net"
+            },
+            {
+              "from": "www.apple.com.edgekey.net",
+              "to": "e6858.dsce9.akamaiedge.net"
+            }
+          ],
+          "final_name": "e6858.dsce9.akamaiedge.net",
+          "addresses": [
+            "23.217.180.246"
+          ],
+          "elapsed_ms": 9.05,
+          "responses": [
+            "id 27176\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.apple.com. IN A\n;ANSWER\nwww.apple.com. 149 IN CNAME www-apple-com.v.aaplimg.com.\nwww-apple-com.v.aaplimg.com. 181 IN CNAME www.apple.com.edgekey.net.\nwww.apple.com.edgekey.net. 190 IN CNAME e6858.dsce9.akamaiedge.net.\ne6858.dsce9.akamaiedge.net. 4 IN A 23.217.180.246\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.apple.com",
+              "to": "www-apple-com.v.aaplimg.com"
+            },
+            {
+              "from": "www-apple-com.v.aaplimg.com",
+              "to": "www.apple.com.edgekey.net"
+            },
+            {
+              "from": "www.apple.com.edgekey.net",
+              "to": "e6858.dsce9.akamaiedge.net"
+            }
+          ],
+          "final_name": "e6858.dsce9.akamaiedge.net",
+          "addresses": [
+            "23.217.180.246"
+          ],
+          "elapsed_ms": 51.59,
+          "responses": [
+            "id 48200\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.apple.com. IN A\n;ANSWER\nwww.apple.com. 82 IN CNAME www-apple-com.v.aaplimg.com.\nwww-apple-com.v.aaplimg.com. 300 IN CNAME www.apple.com.edgekey.net.\nwww.apple.com.edgekey.net. 11 IN CNAME e6858.dsce9.akamaiedge.net.\ne6858.dsce9.akamaiedge.net. 20 IN A 23.217.180.246\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.apple.com",
+              "to": "www-apple-com.v.aaplimg.com"
+            },
+            {
+              "from": "www-apple-com.v.aaplimg.com",
+              "to": "www.apple.com.edgekey.net"
+            },
+            {
+              "from": "www.apple.com.edgekey.net",
+              "to": "e6858.dsce9.akamaiedge.net"
+            }
+          ],
+          "final_name": "e6858.dsce9.akamaiedge.net",
+          "addresses": [
+            "23.0.193.49"
+          ],
+          "elapsed_ms": 41.02,
+          "responses": [
+            "id 21569\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.apple.com. IN A\n;ANSWER\nwww.apple.com. 204 IN CNAME www-apple-com.v.aaplimg.com.\nwww-apple-com.v.aaplimg.com. 105 IN CNAME www.apple.com.edgekey.net.\nwww.apple.com.edgekey.net. 136 IN CNAME e6858.dsce9.akamaiedge.net.\ne6858.dsce9.akamaiedge.net. 14 IN A 23.0.193.49\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.korea.ac.kr": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [],
+          "final_name": "www.korea.ac.kr",
+          "addresses": [
+            "163.152.6.10"
+          ],
+          "elapsed_ms": 43.19,
+          "responses": [
+            "id 4454\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.korea.ac.kr. IN A\n;ANSWER\nwww.korea.ac.kr. 3600 IN A 163.152.6.10\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [],
+          "final_name": "www.korea.ac.kr",
+          "addresses": [
+            "163.152.6.10"
+          ],
+          "elapsed_ms": 39.54,
+          "responses": [
+            "id 58778\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.korea.ac.kr. IN A\n;ANSWER\nwww.korea.ac.kr. 3297 IN A 163.152.6.10\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [],
+          "final_name": "www.korea.ac.kr",
+          "addresses": [
+            "163.152.6.10"
+          ],
+          "elapsed_ms": 131.49,
+          "responses": [
+            "id 64580\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.korea.ac.kr. IN A\n;ANSWER\nwww.korea.ac.kr. 3600 IN A 163.152.6.10\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.stanford.edu": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.stanford.edu",
+              "to": "stanford.netlifyglobalcdn.com"
+            }
+          ],
+          "final_name": "stanford.netlifyglobalcdn.com",
+          "addresses": [
+            "15.197.167.90",
+            "3.33.186.135"
+          ],
+          "elapsed_ms": 41.81,
+          "responses": [
+            "id 48854\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.stanford.edu. IN A\n;ANSWER\nwww.stanford.edu. 131 IN CNAME stanford.netlifyglobalcdn.com.\nstanford.netlifyglobalcdn.com. 300 IN A 15.197.167.90\nstanford.netlifyglobalcdn.com. 300 IN A 3.33.186.135\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.stanford.edu",
+              "to": "stanford.netlifyglobalcdn.com"
+            }
+          ],
+          "final_name": "stanford.netlifyglobalcdn.com",
+          "addresses": [
+            "15.197.167.90",
+            "3.33.186.135"
+          ],
+          "elapsed_ms": 38.31,
+          "responses": [
+            "id 15837\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.stanford.edu. IN A\n;ANSWER\nwww.stanford.edu. 111 IN CNAME stanford.netlifyglobalcdn.com.\nstanford.netlifyglobalcdn.com. 75 IN A 15.197.167.90\nstanford.netlifyglobalcdn.com. 75 IN A 3.33.186.135\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.stanford.edu",
+              "to": "stanford.netlifyglobalcdn.com"
+            }
+          ],
+          "final_name": "stanford.netlifyglobalcdn.com",
+          "addresses": [
+            "15.197.167.90",
+            "3.33.186.135"
+          ],
+          "elapsed_ms": 211.3,
+          "responses": [
+            "id 40096\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.stanford.edu. IN A\n;ANSWER\nwww.stanford.edu. 1800 IN CNAME stanford.netlifyglobalcdn.com.\nstanford.netlifyglobalcdn.com. 300 IN A 15.197.167.90\nstanford.netlifyglobalcdn.com. 300 IN A 3.33.186.135\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.bbc.co.uk": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.bbc.co.uk",
+              "to": "www.bbc.co.uk.pri.bbc.co.uk"
+            },
+            {
+              "from": "www.bbc.co.uk.pri.bbc.co.uk",
+              "to": "bbc.map.fastly.net"
+            }
+          ],
+          "final_name": "bbc.map.fastly.net",
+          "addresses": [
+            "146.75.48.81"
+          ],
+          "elapsed_ms": 16.36,
+          "responses": [
+            "id 32572\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.bbc.co.uk. IN A\n;ANSWER\nwww.bbc.co.uk. 10068 IN CNAME www.bbc.co.uk.pri.bbc.co.uk.\nwww.bbc.co.uk.pri.bbc.co.uk. 108 IN CNAME bbc.map.fastly.net.\nbbc.map.fastly.net. 60 IN A 146.75.48.81\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.bbc.co.uk",
+              "to": "www.bbc.co.uk.pri.bbc.co.uk"
+            },
+            {
+              "from": "www.bbc.co.uk.pri.bbc.co.uk",
+              "to": "bbc.map.fastly.net"
+            }
+          ],
+          "final_name": "bbc.map.fastly.net",
+          "addresses": [
+            "151.101.0.81",
+            "151.101.128.81",
+            "151.101.192.81",
+            "151.101.64.81"
+          ],
+          "elapsed_ms": 42.51,
+          "responses": [
+            "id 25826\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.bbc.co.uk. IN A\n;ANSWER\nwww.bbc.co.uk. 15527 IN CNAME www.bbc.co.uk.pri.bbc.co.uk.\nwww.bbc.co.uk.pri.bbc.co.uk. 300 IN CNAME bbc.map.fastly.net.\nbbc.map.fastly.net. 48 IN A 151.101.0.81\nbbc.map.fastly.net. 48 IN A 151.101.64.81\nbbc.map.fastly.net. 48 IN A 151.101.128.81\nbbc.map.fastly.net. 48 IN A 151.101.192.81\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.bbc.co.uk",
+              "to": "www.bbc.co.uk.pri.bbc.co.uk"
+            },
+            {
+              "from": "www.bbc.co.uk.pri.bbc.co.uk",
+              "to": "bbc.map.fastly.net"
+            }
+          ],
+          "final_name": "bbc.map.fastly.net",
+          "addresses": [
+            "151.101.0.81",
+            "151.101.128.81",
+            "151.101.192.81",
+            "151.101.64.81"
+          ],
+          "elapsed_ms": 937.6,
+          "responses": [
+            "id 56868\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.bbc.co.uk. IN A\n;ANSWER\nwww.bbc.co.uk. 13104 IN CNAME www.bbc.co.uk.pri.bbc.co.uk.\nwww.bbc.co.uk.pri.bbc.co.uk. 300 IN CNAME bbc.map.fastly.net.\nbbc.map.fastly.net. 60 IN A 151.101.192.81\nbbc.map.fastly.net. 60 IN A 151.101.64.81\nbbc.map.fastly.net. 60 IN A 151.101.128.81\nbbc.map.fastly.net. 60 IN A 151.101.0.81\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.spotify.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.spotify.com",
+              "to": "atc.spotify.map.fastly.net"
+            }
+          ],
+          "final_name": "atc.spotify.map.fastly.net",
+          "addresses": [
+            "146.75.51.42"
+          ],
+          "elapsed_ms": 7.62,
+          "responses": [
+            "id 24206\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.spotify.com. IN A\n;ANSWER\nwww.spotify.com. 216 IN CNAME atc.spotify.map.fastly.net.\natc.spotify.map.fastly.net. 40 IN A 146.75.51.42\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.spotify.com",
+              "to": "atc.spotify.map.fastly.net"
+            }
+          ],
+          "final_name": "atc.spotify.map.fastly.net",
+          "addresses": [
+            "151.101.131.42",
+            "151.101.195.42",
+            "151.101.3.42",
+            "151.101.67.42"
+          ],
+          "elapsed_ms": 39.4,
+          "responses": [
+            "id 48562\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.spotify.com. IN A\n;ANSWER\nwww.spotify.com. 295 IN CNAME atc.spotify.map.fastly.net.\natc.spotify.map.fastly.net. 55 IN A 151.101.67.42\natc.spotify.map.fastly.net. 55 IN A 151.101.195.42\natc.spotify.map.fastly.net. 55 IN A 151.101.3.42\natc.spotify.map.fastly.net. 55 IN A 151.101.131.42\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.spotify.com",
+              "to": "atc.spotify.map.fastly.net"
+            }
+          ],
+          "final_name": "atc.spotify.map.fastly.net",
+          "addresses": [
+            "151.101.131.42",
+            "151.101.195.42",
+            "151.101.3.42",
+            "151.101.67.42"
+          ],
+          "elapsed_ms": 40.06,
+          "responses": [
+            "id 60945\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.spotify.com. IN A\n;ANSWER\nwww.spotify.com. 154 IN CNAME atc.spotify.map.fastly.net.\natc.spotify.map.fastly.net. 50 IN A 151.101.195.42\natc.spotify.map.fastly.net. 50 IN A 151.101.3.42\natc.spotify.map.fastly.net. 50 IN A 151.101.67.42\natc.spotify.map.fastly.net. 50 IN A 151.101.131.42\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.github.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.github.com",
+              "to": "github.com"
+            }
+          ],
+          "final_name": "github.com",
+          "addresses": [
+            "20.200.245.247"
+          ],
+          "elapsed_ms": 10.6,
+          "responses": [
+            "id 56508\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.github.com. IN A\n;ANSWER\nwww.github.com. 1911 IN CNAME github.com.\ngithub.com. 58 IN A 20.200.245.247\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.github.com",
+              "to": "github.com"
+            }
+          ],
+          "final_name": "github.com",
+          "addresses": [
+            "20.200.245.247"
+          ],
+          "elapsed_ms": 50.01,
+          "responses": [
+            "id 21072\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.github.com. IN A\n;ANSWER\nwww.github.com. 3509 IN CNAME github.com.\ngithub.com. 60 IN A 20.200.245.247\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.github.com",
+              "to": "github.com"
+            }
+          ],
+          "final_name": "github.com",
+          "addresses": [
+            "20.27.177.113"
+          ],
+          "elapsed_ms": 42.74,
+          "responses": [
+            "id 59250\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.github.com. IN A\n;ANSWER\nwww.github.com. 1005 IN CNAME github.com.\ngithub.com. 9 IN A 20.27.177.113\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.wikipedia.org": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.wikipedia.org",
+              "to": "dyna.wikimedia.org"
+            }
+          ],
+          "final_name": "dyna.wikimedia.org",
+          "addresses": [
+            "103.102.166.224"
+          ],
+          "elapsed_ms": 198.73,
+          "responses": [
+            "id 47482\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.wikipedia.org. IN A\n;ANSWER\nwww.wikipedia.org. 26897 IN CNAME dyna.wikimedia.org.\ndyna.wikimedia.org. 180 IN A 103.102.166.224\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.wikipedia.org",
+              "to": "dyna.wikimedia.org"
+            }
+          ],
+          "final_name": "dyna.wikimedia.org",
+          "addresses": [
+            "103.102.166.224"
+          ],
+          "elapsed_ms": 206.54,
+          "responses": [
+            "id 2558\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.wikipedia.org. IN A\n;ANSWER\nwww.wikipedia.org. 17322 IN CNAME dyna.wikimedia.org.\ndyna.wikimedia.org. 180 IN A 103.102.166.224\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.wikipedia.org",
+              "to": "dyna.wikimedia.org"
+            }
+          ],
+          "final_name": "dyna.wikimedia.org",
+          "addresses": [
+            "103.102.166.224"
+          ],
+          "elapsed_ms": 37.98,
+          "responses": [
+            "id 11975\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.wikipedia.org. IN A\n;ANSWER\nwww.wikipedia.org. 17812 IN CNAME dyna.wikimedia.org.\ndyna.wikimedia.org. 158 IN A 103.102.166.224\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  },
+  "www.nytimes.com": {
+    "networks": {
+      "KT-current": {
+        "system": {
+          "chain": [
+            {
+              "from": "www.nytimes.com",
+              "to": "www.prd.map.nytimes.com"
+            },
+            {
+              "from": "www.prd.map.nytimes.com",
+              "to": "www.prd.map.nytimes.xovr.nyt.net"
+            },
+            {
+              "from": "www.prd.map.nytimes.xovr.nyt.net",
+              "to": "nytimes.map.fastly.net"
+            }
+          ],
+          "final_name": "nytimes.map.fastly.net",
+          "addresses": [
+            "146.75.49.164"
+          ],
+          "elapsed_ms": 16.02,
+          "responses": [
+            "id 57833\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.nytimes.com. IN A\n;ANSWER\nwww.nytimes.com. 187 IN CNAME www.prd.map.nytimes.com.\nwww.prd.map.nytimes.com. 187 IN CNAME www.prd.map.nytimes.xovr.nyt.net.\nwww.prd.map.nytimes.xovr.nyt.net. 187 IN CNAME nytimes.map.fastly.net.\nnytimes.map.fastly.net. 60 IN A 146.75.49.164\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "168.126.63.1",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "google": {
+          "chain": [
+            {
+              "from": "www.nytimes.com",
+              "to": "www.prd.map.nytimes.com"
+            },
+            {
+              "from": "www.prd.map.nytimes.com",
+              "to": "www.prd.map.nytimes.xovr.nyt.net"
+            },
+            {
+              "from": "www.prd.map.nytimes.xovr.nyt.net",
+              "to": "nytimes.map.fastly.net"
+            }
+          ],
+          "final_name": "nytimes.map.fastly.net",
+          "addresses": [
+            "151.101.1.164",
+            "151.101.129.164",
+            "151.101.193.164",
+            "151.101.65.164"
+          ],
+          "elapsed_ms": 40.51,
+          "responses": [
+            "id 3475\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.nytimes.com. IN A\n;ANSWER\nwww.nytimes.com. 235 IN CNAME www.prd.map.nytimes.com.\nwww.prd.map.nytimes.com. 112 IN CNAME www.prd.map.nytimes.xovr.nyt.net.\nwww.prd.map.nytimes.xovr.nyt.net. 354 IN CNAME nytimes.map.fastly.net.\nnytimes.map.fastly.net. 32 IN A 151.101.129.164\nnytimes.map.fastly.net. 32 IN A 151.101.65.164\nnytimes.map.fastly.net. 32 IN A 151.101.193.164\nnytimes.map.fastly.net. 32 IN A 151.101.1.164\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "8.8.8.8",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        },
+        "quad9": {
+          "chain": [
+            {
+              "from": "www.nytimes.com",
+              "to": "www.prd.map.nytimes.com"
+            },
+            {
+              "from": "www.prd.map.nytimes.com",
+              "to": "www.prd.map.nytimes.xovr.nyt.net"
+            },
+            {
+              "from": "www.prd.map.nytimes.xovr.nyt.net",
+              "to": "nytimes.map.fastly.net"
+            }
+          ],
+          "final_name": "nytimes.map.fastly.net",
+          "addresses": [
+            "151.101.1.164",
+            "151.101.129.164",
+            "151.101.193.164",
+            "151.101.65.164"
+          ],
+          "elapsed_ms": 41.62,
+          "responses": [
+            "id 12828\nopcode QUERY\nrcode NOERROR\nflags QR RD RA\n;QUESTION\nwww.nytimes.com. IN A\n;ANSWER\nwww.nytimes.com. 517 IN CNAME www.prd.map.nytimes.com.\nwww.prd.map.nytimes.com. 517 IN CNAME www.prd.map.nytimes.xovr.nyt.net.\nwww.prd.map.nytimes.xovr.nyt.net. 517 IN CNAME nytimes.map.fastly.net.\nnytimes.map.fastly.net. 60 IN A 151.101.65.164\nnytimes.map.fastly.net. 60 IN A 151.101.129.164\nnytimes.map.fastly.net. 60 IN A 151.101.1.164\nnytimes.map.fastly.net. 60 IN A 151.101.193.164\n;AUTHORITY\n;ADDITIONAL"
+          ],
+          "error": null,
+          "resolver_ip": "9.9.9.9",
+          "collected_at": "2026-10-06T12:52:42.729034+00:00"
+        }
+      }
+    }
+  }
+}

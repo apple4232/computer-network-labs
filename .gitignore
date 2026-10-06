@@ -5,3 +5,12 @@
 *.pcapng
 __pycache__/
 *.pyc
+.lab-deps/
+.lab-certs.pem
+!w03-dns/out/
+!w03-dns/out/**
+!w03-dns/out/*.pcapng
+w03-dns/out/own-dns*.pcapng
+w03-dns/out/*.etl
+w03-dns/out/capture-run.txt
+w03-dns/out/capture-status.txt
