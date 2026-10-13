@@ -11,7 +11,7 @@
 
 === Task 2
  skip  [2] capture parses  - tshark not installed
- FAIL  [2] B1 two or more labelled networks  - KT Wi-Fi / 2026-10-13 evening KST
+  ok   [2] B1 two or more labelled networks  - KT Wi-Fi / 2026-10-13 evening KST, KT Wi-Fi / 2026-10-13 late evening KST
   ok   [2] B2 five runs each
 
 === Task 3
@@ -22,4 +22,4 @@
   ok   [3] goodput share of baseline  - 99%
  skip  [3] R5 argument in observation.md  - graded by a human
 
-  6 passed, 1 failed, 2 skipped
+  7 passed, 0 failed, 2 skipped
