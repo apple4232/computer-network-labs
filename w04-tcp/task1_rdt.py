@@ -68,25 +68,63 @@ class Sender:
     """
 
     def __init__(self, data_channel, ack_channel, data):
-        raise NotImplementedError("write your sender")
+        self.channel, self.acks = data_channel, ack_channel
+        self.pieces = [data[i:i + PAYLOAD] for i in range(0, len(data), PAYLOAD)]
+        self.base = self.next_seq = self.tick = 0
+        self.pending = {}  # sequence -> last transmission tick
+        self.acknowledged = set()
+        self.window = 8
+        self.timeout = 24
 
     def step(self):
         """Do one unit of work. Return False when you believe you are done."""
-        raise NotImplementedError
+        self.tick += 1
+        ack = self.acks.receive()
+        if ack is not None and ack in self.pending:
+            del self.pending[ack]
+            self.acknowledged.add(ack)
+        while self.base in self.acknowledged:
+            self.acknowledged.remove(self.base)
+            self.base += 1
+        if self.base == len(self.pieces):
+            return False
+        for seq, sent_at in list(self.pending.items()):
+            if self.tick - sent_at >= self.timeout:
+                self.channel.send((seq, self.pieces[seq]))
+                self.pending[seq] = self.tick
+        while self.next_seq < min(self.base + self.window, len(self.pieces)):
+            seq = self.next_seq
+            self.channel.send((seq, self.pieces[seq]))
+            self.pending[seq] = self.tick
+            self.next_seq += 1
+        return True
 
 
 class Receiver:
     """Your receiver. Hands back the reassembled bytes via `.data()`."""
 
     def __init__(self, data_channel, ack_channel):
-        raise NotImplementedError("write your receiver")
+        self.channel, self.acks = data_channel, ack_channel
+        self.next_seq = 0
+        self.buffer = {}
+        self.output = bytearray()
 
     def step(self):
-        raise NotImplementedError
+        packet = self.channel.receive()
+        if packet is None:
+            return
+        seq, payload = packet
+        # ACK duplicates too: the previous ACK may have been lost.
+        self.acks.send(seq)
+        if seq >= self.next_seq:
+            self.buffer.setdefault(seq, payload)
+        while self.next_seq in self.buffer:
+            self.output.extend(self.buffer.pop(self.next_seq))
+            self.next_seq += 1
 
     def data(self):
         """The bytes reassembled so far."""
-        raise NotImplementedError
+        return bytes(self.output)
 
 
 # ------------------------------------------------------------------- harness

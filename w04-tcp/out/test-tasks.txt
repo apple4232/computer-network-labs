@@ -1,0 +1,25 @@
+
+=== Task 1
+  bytes    sent 2000   received 2000
+  channel  {'sent': 310, 'lost': 32, 'duplicated': 10, 'delivered': 288}
+  result   IDENTICAL
+  ok   [1] transfer seed=246 arrives identical
+  bytes    sent 2000   received 2000
+  channel  {'sent': 311, 'lost': 38, 'duplicated': 9, 'delivered': 282}
+  result   IDENTICAL
+  ok   [1] transfer seed=999 arrives identical
+
+=== Task 2
+ skip  [2] capture parses  - tshark not installed
+ FAIL  [2] B1 two or more labelled networks  - KT Wi-Fi / 2026-10-13 evening KST
+  ok   [2] B2 five runs each
+
+=== Task 3
+  baseline   goodput  986.8/1000 slots   loss  37.4%   retx  2340   avg queue   8.8
+  yours      goodput  974.2/1000 slots   loss   2.1%   retx    84   avg queue   4.6
+  ok   [3] R3 loss at most 5%  - 2.1%
+  ok   [3] R4 average queue at most 5.0  - 4.6
+  ok   [3] goodput share of baseline  - 99%
+ skip  [3] R5 argument in observation.md  - graded by a human
+
+  6 passed, 1 failed, 2 skipped

@@ -1,0 +1,36 @@
+[
+  {
+    "seed": 246,
+    "steps": 762,
+    "identical": true,
+    "data_channel": {
+      "sent": 310,
+      "lost": 32,
+      "duplicated": 10,
+      "delivered": 288
+    },
+    "ack_channel": {
+      "sent": 288,
+      "lost": 30,
+      "duplicated": 5,
+      "delivered": 263
+    }
+  },
+  {
+    "seed": 999,
+    "steps": 710,
+    "identical": true,
+    "data_channel": {
+      "sent": 311,
+      "lost": 38,
+      "duplicated": 9,
+      "delivered": 282
+    },
+    "ack_channel": {
+      "sent": 282,
+      "lost": 24,
+      "duplicated": 11,
+      "delivered": 269
+    }
+  }
+]

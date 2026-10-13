@@ -54,11 +54,25 @@ class YourControl:
     """
 
     def __init__(self):
-        self.window = 1
-        raise NotImplementedError("write your congestion control")
+        self.window = 1.0
+        self.ssthresh = float("inf")
+        self.recovery_acks = 0
+        self.backoff = 0.65
 
     def on_ack(self):
-        raise NotImplementedError
+        if self.recovery_acks:
+            self.recovery_acks -= 1
+            return
+        if self.window < self.ssthresh:
+            self.window += 1.0
+        else:
+            self.window += 0.1 / self.window
 
     def on_loss(self):
-        raise NotImplementedError
+        # Several timeouts can describe one burst of congestion. Reduce once
+        # per recovery round, then wait for a window of successful ACKs.
+        if self.recovery_acks:
+            return
+        self.recovery_acks = max(1, int(self.window))
+        self.window = max(1.0, self.window * self.backoff)
+        self.ssthresh = self.window

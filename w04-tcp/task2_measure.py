@@ -13,6 +13,7 @@ hour from now. That is the finding, not a problem with the measurement.
 Each run appends to out/throughput.json so you can compare them later.
 """
 import argparse, json, os, statistics, subprocess, time
+from datetime import datetime, timezone, timedelta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -26,14 +27,20 @@ REPEATS = 5
 
 def one_run():
     """One transfer. Returns (seconds, bytes, curl's own timing breakdown)."""
-    fmt = "%{time_namelookup} %{time_connect} %{time_starttransfer} %{time_total} %{size_download}"
+    fmt = "%{time_namelookup} %{time_connect} %{time_starttransfer} %{time_total} %{size_download} %{http_code}"
     r = subprocess.run(
-        ["curl", "-s", "-o", os.devnull, "-w", fmt, TARGET],
-        capture_output=True, text=True)
+        ["curl", "--fail", "--silent", "--show-error", "--http1.1",
+         "--connect-timeout", "15", "--max-time", "90",
+         "-o", os.devnull, "-w", fmt, TARGET],
+        capture_output=True, text=True, timeout=100)
     if r.returncode != 0 or not r.stdout.strip():
         raise RuntimeError(f"curl failed: {r.stderr.strip() or r.returncode}")
-    dns, conn, first, total, size = (float(x) for x in r.stdout.split())
+    dns, conn, first, total, size, status = (float(x) for x in r.stdout.split())
+    if status != 200 or int(size) != 5_000_000:
+        raise RuntimeError(f"Incomplete measurement: HTTP {int(status)}, {int(size)} bytes")
     return {
+        "when": datetime.now(timezone(timedelta(hours=9))).isoformat(timespec="seconds"),
+        "http_status": int(status),
         "dns_s": dns,
         "connect_s": conn - dns,        # this is your TCP handshake
         "ttfb_s": first - conn,
@@ -49,6 +56,8 @@ def main():
                    help='where you are, e.g. "campus wifi" or "tethering"')
     p.add_argument("--repeats", type=int, default=REPEATS)
     a = p.parse_args()
+    if a.repeats < 5:
+        p.error("at least five transfers are required")
     os.makedirs(OUT, exist_ok=True)
 
     runs = []
@@ -63,7 +72,8 @@ def main():
     mbps = [r["mbps"] for r in runs]
     record = {
         "label": a.label,
-        "when": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "when": datetime.now(timezone(timedelta(hours=9))).isoformat(timespec="seconds"),
+        "measurement_mode": "same network, different times of day (path B)",
         "target": TARGET,
         "runs": runs,
         "mbps_median": statistics.median(mbps),
@@ -74,9 +84,15 @@ def main():
     }
 
     path = os.path.join(OUT, "throughput.json")
-    all_records = json.load(open(path)) if os.path.exists(path) else []
+    all_records = []
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            all_records = json.load(f)
     all_records.append(record)
-    json.dump(all_records, open(path, "w"), indent=2)
+    temporary = path + ".tmp"
+    with open(temporary, "w", encoding="utf-8") as f:
+        json.dump(all_records, f, indent=2, ensure_ascii=False)
+    os.replace(temporary, path)
 
     spread = (max(mbps) - min(mbps)) / statistics.median(mbps) if mbps else 0
     print(f"\n  {a.label}:  median {record['mbps_median']:.2f} Mbps, "

@@ -1,0 +1,3 @@
+  bytes    sent 2000   received 2000
+  channel  {'sent': 311, 'lost': 38, 'duplicated': 9, 'delivered': 282}
+  result   IDENTICAL

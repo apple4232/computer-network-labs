@@ -5,6 +5,9 @@
 *.pcapng
 __pycache__/
 *.pyc
+!w04-tcp/out/
+!w04-tcp/out/**
+!w04-tcp/out/*.pcapng
 .lab-deps/
 .lab-certs.pem
 !w03-dns/out/

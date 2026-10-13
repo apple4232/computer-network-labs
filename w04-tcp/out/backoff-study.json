@@ -1,0 +1,56 @@
+[
+  {
+    "goodput": 934.25,
+    "loss": 0.017006802721088437,
+    "retx": 65,
+    "queue": 3.52525,
+    "backoff": 0.5,
+    "last_1000_acks_window_min": 15.343118053129825,
+    "last_1000_acks_window_max": 20.862454430772107
+  },
+  {
+    "goodput": 956.0,
+    "loss": 0.018887187340479835,
+    "retx": 74,
+    "queue": 3.67,
+    "backoff": 0.6,
+    "last_1000_acks_window_min": 18.119975281435046,
+    "last_1000_acks_window_max": 30.199958802391745
+  },
+  {
+    "goodput": 974.25,
+    "loss": 0.020963314200149737,
+    "retx": 84,
+    "queue": 4.64025,
+    "backoff": 0.65,
+    "last_1000_acks_window_min": 22.35652997553941,
+    "last_1000_acks_window_max": 26.450543468929443
+  },
+  {
+    "goodput": 976.0,
+    "loss": 0.024105367793240556,
+    "retx": 97,
+    "queue": 5.3275,
+    "backoff": 0.7,
+    "last_1000_acks_window_min": 21.139553106814137,
+    "last_1000_acks_window_max": 30.199361581163053
+  },
+  {
+    "goodput": 976.75,
+    "loss": 0.027220984904726554,
+    "retx": 110,
+    "queue": 6.21,
+    "backoff": 0.75,
+    "last_1000_acks_window_min": 22.65012833649459,
+    "last_1000_acks_window_max": 30.200171115326118
+  },
+  {
+    "goodput": 977.75,
+    "loss": 0.03171871158101795,
+    "retx": 129,
+    "queue": 6.67375,
+    "backoff": 0.8,
+    "last_1000_acks_window_min": 24.16115276713702,
+    "last_1000_acks_window_max": 30.20144095892127
+  }
+]

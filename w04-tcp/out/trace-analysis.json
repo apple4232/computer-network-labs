@@ -1,0 +1,78 @@
+{
+  "source": "Official 9e archive / tcp-wireshark-trace1-1.pcapng (path B; not our traffic)",
+  "sha256": "164d5e3b3d2a25edb2ab6c57292e883c9c29123d4c18b2f5872a929f724559b3",
+  "tcp_packets": 180,
+  "flow_packets": 180,
+  "syn": {
+    "number": 1,
+    "time": 1612320206.692875,
+    "src": "192.168.86.68",
+    "dst": "128.119.245.12",
+    "sport": 55639,
+    "dport": 80,
+    "seq": 4236649187,
+    "ack": 0,
+    "flags": 2,
+    "window": 65535,
+    "options": {
+      "mss": 1460,
+      "window_scale_shift": 6,
+      "sack_permitted": true
+    },
+    "payload_bytes": 0
+  },
+  "syn_ack": {
+    "number": 2,
+    "time": 1612320206.7152889,
+    "src": "128.119.245.12",
+    "dst": "192.168.86.68",
+    "sport": 80,
+    "dport": 55639,
+    "seq": 1068969752,
+    "ack": 4236649188,
+    "flags": 18,
+    "window": 28960,
+    "options": {
+      "mss": 1460,
+      "sack_permitted": true,
+      "window_scale_shift": 7
+    },
+    "payload_bytes": 0
+  },
+  "ack": {
+    "number": 3,
+    "time": 1612320206.71538,
+    "src": "192.168.86.68",
+    "dst": "128.119.245.12",
+    "sport": 55639,
+    "dport": 80,
+    "seq": 4236649188,
+    "ack": 1068969753,
+    "flags": 16,
+    "window": 2058,
+    "options": {},
+    "payload_bytes": 0
+  },
+  "handshake_ms": 22.50504493713379,
+  "window_scaling_negotiated": true,
+  "client": {
+    "peak_flight": {
+      "bytes": 75296,
+      "packet": 145,
+      "receiver_advertised_window": 173824
+    },
+    "scale_factor": 64,
+    "advertised_window_min": 130944,
+    "advertised_window_max": 131712
+  },
+  "server": {
+    "peak_flight": {
+      "bytes": 777,
+      "packet": 179,
+      "receiver_advertised_window": 131712
+    },
+    "scale_factor": 128,
+    "advertised_window_min": 31872,
+    "advertised_window_max": 194816
+  }
+}
